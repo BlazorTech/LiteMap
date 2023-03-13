@@ -1,0 +1,9 @@
+﻿@page "/advanced"
+<BlazorTech.LiteMap.LiteMap Regions="Regions">
+    <PopupTemplate>
+        <div style="border-radius:.5em; background-color:lightgrey; padding:1em 2em;text-align:center">
+            @context.Title <br />
+            [@(((LiteMapRegionISO)context).Code)]
+        </div>
+    </PopupTemplate>
+</BlazorTech.LiteMap.LiteMap>
