@@ -1,8 +1,8 @@
-using BlazorTech.LiteMap.Demo;
+using BlazorWebAssembly;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
-namespace BlazorTech.LiteMap.Demo
+namespace BlazorWebAssembly
 {
     public class Program
     {
