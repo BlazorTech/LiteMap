@@ -1,8 +1,11 @@
+@import '_content/BlazorTech.LiteMap/BlazorTech.LiteMap.bundle.scp.css';
+
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-tythk0fk5s] {
     position: relative;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 main[b-tythk0fk5s] {
@@ -58,7 +61,6 @@ main[b-tythk0fk5s] {
 
     .sidebar[b-tythk0fk5s] {
         width: 250px;
-        height: 100vh;
         position: sticky;
         top: 0;
     }

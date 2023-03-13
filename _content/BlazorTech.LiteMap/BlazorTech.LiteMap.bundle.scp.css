@@ -1,0 +1,22 @@
+/* _content/BlazorTech.LiteMap/LiteMap.razor.rz.scp.css */
+path[b-kdata0ogix] {
+    transition: all .5s;
+    fill: rgba(0,0,0,0);
+    stroke: rgba(0,0,0,0.5);
+}
+
+.indicator[b-kdata0ogix] {
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.def-indicator[b-kdata0ogix] {
+    background: rgba(0,0,0,1);
+    color: #f1f1f1;
+    padding: 10px 30px;
+    font: 20px Arial;
+    border-radius: 5px;
+    min-width: 200px;
+    text-transform: capitalize;
+    text-align: center;
+}
