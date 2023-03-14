@@ -1,6 +1,6 @@
 ﻿@if (LiteMapCascadingValue.RenderFragment != null)
 {
-    <div class="indicator" style="left:@(@LiteMapCascadingValue.PositionX)px;top:@(@LiteMapCascadingValue.PositionY)px">
+    <div class="indicator" style="left:@(@LiteMapCascadingValue.PositionX)px;top:@(@LiteMapCascadingValue.PositionY)px;z-index:@LiteMapCascadingValue.IndexZ">
         @LiteMapCascadingValue.RenderFragment
     </div>
 }

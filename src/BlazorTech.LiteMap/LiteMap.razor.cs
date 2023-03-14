@@ -11,7 +11,7 @@ public partial class LiteMap
 
     [Parameter] public EventCallback<LiteMapRegion> OnHoverCallback { get; set; }
 
-    [Parameter] public double PopupOffsetX { get; set; } = 30;
+    [Parameter] public double PopupOffsetX { get; set; } = 0;
     [Parameter] public double PopupOffsetY { get; set; } = 30;
 
     LiteMapRegion? _hoveredRegion { get; set; }
