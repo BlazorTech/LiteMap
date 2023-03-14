@@ -1,3 +1,8 @@
+/* _content/BlazorTech.LiteMap/Internal/LiteMapPopup.razor.rz.scp.css */
+.indicator[b-f49z91x22f] {
+    position: absolute;
+    transform: translateX(-50%);
+}
 /* _content/BlazorTech.LiteMap/LiteMap.razor.rz.scp.css */
 path[b-kdata0ogix] {
     transition: all .5s;
@@ -14,9 +19,4 @@ path[b-kdata0ogix] {
     min-width: 200px;
     text-transform: capitalize;
     text-align: center;
-}
-/* _content/BlazorTech.LiteMap/LiteMapPopup.razor.rz.scp.css */
-.indicator[b-ri1movqara] {
-    position: absolute;
-    transform: translateX(-50%);
 }
