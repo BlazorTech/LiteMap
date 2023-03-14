@@ -7,8 +7,8 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "BlazorTech.LiteMap.dll": "sha256-RlJllqR8GIH\/TpzsG3kKBXiTh4PkVgaW3bAm\/EiHKeo=",
-      "BlazorWebAssembly.dll": "sha256-h8SOAO0hWwvlilgEYgfaqdcskPuNa\/vpmdR6I4L7cYk=",
+      "BlazorTech.LiteMap.dll": "sha256-H2VyPc+R1VgTqBzYsxj4WLHt\/Wp96bFyFBkYw\/fwNns=",
+      "BlazorWebAssembly.dll": "sha256-y9ErLGgx\/yvvLQAddbhSPlulYZbs16QblydGYebqQLs=",
       "Microsoft.AspNetCore.Components.dll": "sha256-ElZk1VWCiJ0fA1kxURpRLTBLqSX+WYa5CnFYZW8lNfk=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-kuMPJfOzEBxnWD6C+mWK9f3tmWYxnRwbruLl8R78\/ow=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-VoOExk2fEE249K3Jayw1Nymq9Bc8LlKEWiOG9\/0GiNY=",
