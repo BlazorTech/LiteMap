@@ -1,0 +1,20 @@
+﻿<CascadingValue Value="@CascadingValue" IsFixed="true">
+    @ChildContent
+    <LiteMapPopup @ref="_liteMapPopup"></LiteMapPopup>
+</CascadingValue>
+
+@code {
+    private LiteMapCascadingValue CascadingValue { get; set; }
+
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+
+    private LiteMapPopup? _liteMapPopup;
+
+    protected override void OnInitialized()
+    {
+        CascadingValue = new LiteMapCascadingValue
+        {
+                UpdateUI = () => _liteMapPopup.ForceUpdate()
+        };
+    }
+}

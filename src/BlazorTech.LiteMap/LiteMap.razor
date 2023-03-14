@@ -1,20 +1,11 @@
-﻿<svg class="map-base" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" baseProfile="tiny" id="svg2" x="0px" y="0px" width="100%" viewBox="0 0 1030 590" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace"> 
+﻿<svg class="map-base" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" baseProfile="tiny" id="svg2" x="0px" y="0px" width="100%" viewBox="@ViewBox" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace"> 
     @foreach(var r in Regions)
     {
         <path @onmouseover="async a => await MouseOverAsync(a, r)" @onmousemove="MouseMove" @onmouseleave="async () => await MouseOutAsync(r)" d="@r.Path" stroke="#888888" stroke-width="0.5" style="fill:@(r.IsHovered ? HoverColor : r.BackgroundColor)"></path>
     }
 </svg>
 
-<div class="indicator" style="left:@(_pageX)px;top:@(_pageY)px;display:@(_hoveredRegion==null?"none":"block")">
-    @if(_hoveredRegion!= null)
-    {
-        @PopupTemplate(_hoveredRegion);
-    }
-</div>
-
-
 @code{
+    [CascadingParameter] private LiteMapCascadingValue LiteMapCascadingValue { get; set; }
     [Parameter] public RenderFragment<LiteMapRegion> PopupTemplate { get; set; } = r =>@<div class="def-indicator">@r.Title</div>;
-
-    
 }

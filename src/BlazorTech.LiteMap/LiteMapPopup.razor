@@ -1,0 +1,15 @@
+﻿@if (LiteMapCascadingValue.RenderFragment != null)
+{
+    <div class="indicator" style="left:@(@LiteMapCascadingValue.PositionX)px;top:@(@LiteMapCascadingValue.PositionY)px">
+        @LiteMapCascadingValue.RenderFragment
+    </div>
+}
+
+@code{
+    [CascadingParameter] private LiteMapCascadingValue LiteMapCascadingValue { get; set; }
+
+    internal void ForceUpdate()
+    {
+        StateHasChanged();
+    }
+}
