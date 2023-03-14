@@ -1,6 +1,6 @@
 ﻿<CascadingValue Value="@CascadingValue" IsFixed="true">
     @ChildContent
-    <LiteMapPopup @ref="_liteMapPopup"></LiteMapPopup>
+    <BlazorTech.LiteMap.Internal.LiteMapPopup @ref="_liteMapPopup"/>
 </CascadingValue>
 
 @code {
@@ -8,7 +8,7 @@
 
     [Parameter] public RenderFragment? ChildContent { get; set; }
 
-    private LiteMapPopup? _liteMapPopup;
+    private Internal.LiteMapPopup? _liteMapPopup;
 
     protected override void OnInitialized()
     {
