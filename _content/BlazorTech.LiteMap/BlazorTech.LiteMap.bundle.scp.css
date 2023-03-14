@@ -5,11 +5,6 @@ path[b-kdata0ogix] {
     stroke: rgba(0,0,0,0.5);
 }
 
-.indicator[b-kdata0ogix] {
-    position: absolute;
-    transform: translateX(-50%);
-}
-
 .def-indicator[b-kdata0ogix] {
     background: rgba(0,0,0,1);
     color: #f1f1f1;
@@ -19,4 +14,9 @@ path[b-kdata0ogix] {
     min-width: 200px;
     text-transform: capitalize;
     text-align: center;
+}
+/* _content/BlazorTech.LiteMap/LiteMapPopup.razor.rz.scp.css */
+.indicator[b-ri1movqara] {
+    position: absolute;
+    transform: translateX(-50%);
 }
